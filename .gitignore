@@ -1,0 +1,41 @@
+# Intellij
+.idea
+rapid.iml
+
+# Apple
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+*.tmp
+
+# build and vendor
+rapid
+gin-bin
+*.rpm
+*.deb
+build/*
+dist
+utils
+target/
+
+# TLS cache
+.cache
+
+# do not commit vendored files
+vendor/*/
+
+# jupyter notebooks
+*.ipynb
+.ipynb*
+
+# Vegeta stress testing
+results.bin
+
+# coverage
+report
+*.coverprofile
+
+# scratch pad
+_scratch
