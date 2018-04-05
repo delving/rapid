@@ -30,7 +30,7 @@ type Tenant struct {
 // LOD holds all the configuration for the Linked Open Data (LOD) functionality
 type LOD struct {
 	// make the lod endpoint available
-	enabled bool `json:"enabled"`
+	Enabled bool `json:"enabled"`
 
 	// the 303 redirect entry point.  This is where the content negotiation happens
 	Resource string `json:"resource"`
