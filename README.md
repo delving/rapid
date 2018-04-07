@@ -1,4 +1,19 @@
-# Delving RAPID 
+<p align="center">
+  <!--<img alt="GoReleaser Logo" src="https://avatars2.githubusercontent.com/u/24697112?v=3&s=200" height="140" />-->
+  <h3 align="center">Delving RAPID</h3>
+  <p align="center">Linked Open Data microservice</p>
+  <p align="center">
+    <a href="https://github.com/delving/rapid/releases/latest"><img alt="Release" src="https://img.shields.io/github/release/delving/rapid.svg?style=flat-square"></a>
+    <a href="/LICENSE.md"><img alt="Software License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square"></a>
+    <a href="https://travis-ci.org/delving/rapid"><img alt="Travis" src="https://img.shields.io/travis/delving/rapid/master.svg?style=flat-square"></a>
+    <a href='https://coveralls.io/github/delving/rapid?branch=develop'><img src='https://coveralls.io/repos/github/delving/rapid/badge.svg?branch=develop' alt='Coverage Status' /></a>
+
+    <a href="https://goreportcard.com/report/github.com/delving/rapid"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/delving/rapid?style=flat-square"></a>
+    <!--<a href="http://godoc.org/github.com/delving/rapid"><img alt="Go Doc" src="https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square"></a>-->
+    <a href="https://github.com/goreleaser"><img alt="Powered By: GoReleaser" src="https://img.shields.io/badge/powered%20by-goreleaser-green.svg?style=flat-square"></a>
+  </p>
+</p>
+
 
 RAPID is a recursive acronym that stands for *Rapid API Delving*. 
 
