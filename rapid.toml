@@ -1,0 +1,42 @@
+enabledTenants = ["default", "all"]
+wildCardTenant = "all"
+
+devMode = true
+
+[http]
+# all the configuration for the http sub-command
+# The port of the http server
+port = 3001
+
+[ElasticSearch]
+# enable the elasticsearch search api
+enabled = true 
+# the urls where we can find elasticsearch
+urls = ["http://localhost:9200"]
+# the name of the index. If empty it is the name of the OrgId
+index = "rapid2"
+# if _mapping and _search proxies should be enabled
+proxy = false
+# Store fragments 
+fragments = true
+# index in V1 mode (will disable fragments and v2 style indexing)
+indexV1 = false
+# Enable trace logging of elasticsearch
+enableTrace = false
+
+[all]
+orgID = "all"
+
+[default]
+orgID  = "default"
+
+[default.lod]
+# enable the lod routing point
+enabled = true
+## resource routing point
+resource = "resource"
+# html routing point
+html = "page"
+# rdf data routing point
+rdf = "data"
+
