@@ -35,4 +35,29 @@ var _ = Describe("Config", func() {
 		})
 	})
 
+	Describe("build information", func() {
+
+		Context("when initializing", func() {
+
+			It("should set devBuild  on empty", func() {
+				info := NewBuildVersionInfo(
+					"", "", "ginkgo", "",
+				)
+				Expect(info).ToNot(BeNil())
+				Expect(info.Version).To(Equal("devBuild"))
+				Expect(info.BuildAgent).To(Equal("ginkgo"))
+			})
+
+			It("should pretty print to JSON", func() {
+				info := NewBuildVersionInfo(
+					"", "", "ginkgo", "",
+				)
+				Expect(info).ToNot(BeNil())
+				json, err := info.JSON(true)
+				Expect(err).ToNot(HaveOccurred())
+				Expect(json).To(ContainSubstring("ginkgo"))
+			})
+		})
+	})
+
 })

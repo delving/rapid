@@ -120,6 +120,20 @@ var _ = Describe("Namespace", func() {
 			})
 		})
 
+		Context("When setting defaults", func() {
+
+			It("should set all the default namespaces", func() {
+				nsMap := c.NewNameSpaceMap()
+				Expect(nsMap).ToNot(BeNil())
+				k, _ := nsMap.Len()
+				Expect(k).To(Equal(0))
+				nsMap.SetDefaultNameSpaces()
+				k, v := nsMap.Len()
+				Expect(k).To(Equal(v))
+				Expect(k).To(Equal(26))
+			})
+		})
+
 	})
 
 	Describe("Should be able to deal with namespace from a uri", func() {

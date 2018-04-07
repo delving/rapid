@@ -70,7 +70,7 @@ func (n *NameSpaceMap) AddNameSpace(ns NameSpace) {
 //// NewConfigNameSpaceMap creates a map from the NameSpaces defined in the config
 //func NewConfigNameSpaceMap(c *RawConfig) *NameSpaceMap {
 //nsMap := NewNameSpaceMap()
-//nsMap.setDefaultNameSpaces()
+//nsMap.SetDefaultNameSpaces()
 //nsMap.Load(c)
 //return nsMap
 //}
@@ -174,8 +174,8 @@ var defaultNameSpaces = map[string]string{
 	"wgs84_pos":   "http://www.w3.org/2003/01/geo/wgs84_pos#",
 }
 
-// setDefaultNameSpaces sets the default namespaces that are supported
-func (n *NameSpaceMap) setDefaultNameSpaces() {
+// SetDefaultNameSpaces sets the default namespaces that are supported
+func (n *NameSpaceMap) SetDefaultNameSpaces() {
 	for prefix, baseURI := range defaultNameSpaces {
 		n.Add(prefix, baseURI)
 	}
