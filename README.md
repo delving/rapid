@@ -1,6 +1,6 @@
 ## NOTICE: this repository is no longer actively maintained.
 
-This functionality is now being developed in the [Hub3](https://github.com/delving/hub3) repository.
+This functionality is now being developed in the [delving/hub3](https://github.com/delving/hub3) repository.
 
 <p align="center">
   <!--<img alt="GoReleaser Logo" src="https://avatars2.githubusercontent.com/u/24697112?v=3&s=200" height="140" />-->
